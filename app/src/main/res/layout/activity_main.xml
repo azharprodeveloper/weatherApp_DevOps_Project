@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
     <ImageView
@@ -11,11 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
+        android:outlineAmbientShadowColor="#0E0101"
+        android:src="@drawable/background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pic" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/cityTextView"
@@ -23,12 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Enter The City"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_light"
+        android:textColor="#FFFFFF"
         android:textSize="36dp"
         android:textStyle="normal|italic"
         app:layout_constraintEnd_toEndOf="parent"

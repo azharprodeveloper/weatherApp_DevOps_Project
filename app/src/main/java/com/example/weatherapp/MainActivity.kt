@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
                         "${ it.main.temp.toString().substringBefore(".").toInt()- 273} °C".also { tempTextView.text = it }
                         "${it.main.temp_min.toString().substringBefore(".").toInt()- 273} °C".also { minTempTextView.text = it }
                         "${it.main.temp_max.toString().substringBefore(".").toInt()- 273} °C".also { maxTempTextView.text = it }
+
                         it.sys.sunrise.toString().also { sunriseTextView.text = it }
                         it.sys.sunset.toString().also { sunsetTextVIew.text = it }
                         it.wind.speed.toString().also { windTextView.text = it }
